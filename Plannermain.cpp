@@ -1,13 +1,9 @@
-#include <string>
 #include <iostream>
-#include <map>
-#include <list>
 #include "Planner.h"
-using namespace std;
 
 int main()
 {
-	
-	
-	return 0;
+    Planner yaroslav;
+    yaroslav.addevent(Date()-1,"Park");
+    yaroslav.showinfo();
 }

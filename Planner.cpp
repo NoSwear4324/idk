@@ -17,7 +17,10 @@ void Planner::addevent(Date d, string info)
 
 void Planner::delevent(Date d, string info)
 {
-
+	if (book.find(d) == book.end())
+	{	
+		cout << "Date not found!!" << endl;
+	}
 }
 
 void Planner::findeventbydate(Date d) const

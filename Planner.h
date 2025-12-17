@@ -18,4 +18,3 @@ public:
 	void findeventbyinfo(string info)const;
 	void showinfo()const;
 };
-
