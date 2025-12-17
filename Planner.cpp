@@ -1,5 +1,4 @@
 #include "Planner.h"
-//ssss
 Planner::Planner()
 {
 	book[Date()].push_back("C++");
@@ -13,7 +12,7 @@ Planner::Planner()
 
 void Planner::addevent(Date d, string info)
 {
-
+	book[d].push_back(info);
 }
 
 void Planner::delevent(Date d, string info)
@@ -33,5 +32,13 @@ void Planner::findeventbyinfo(string info) const
 
 void Planner::showinfo() const
 {
+	for (auto p = book.begin(); p != book.end(); p++ )
+	{
+		cout << p->first << endl;
+		for (auto it = p->second.begin(); it != p->second.end(); it++)
+		{
+			cout << "\t" << *it << endl;
+		}
 
+	}
 }
