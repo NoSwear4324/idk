@@ -14,4 +14,8 @@ int main()
     yaroslav.delevent(Date(2025,12,31), "New year");
     yaroslav.showinfo();
 
+    cout << "=======================================" << endl;
+    yaroslav.findeventbyinfo("C++");
+    yaroslav.findeventbyinfo("Park");
+
 }
