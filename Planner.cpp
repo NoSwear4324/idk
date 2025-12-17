@@ -68,6 +68,7 @@ void Planner::findeventbyinfo(string info) const
 	{	
 		cout << "Not found:(" << endl;
 	}
+	
 }
 
 void Planner::showinfo() const
