@@ -19,3 +19,5 @@ int main()
     yaroslav.findeventbyinfo("Park");
 
 }
+
+//(╯°□°）╯︵ ┻━┻ ┳━┳ ノ( ゜-゜ノ)
