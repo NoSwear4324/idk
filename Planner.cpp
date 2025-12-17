@@ -51,7 +51,23 @@ void Planner::findeventbydate(Date d) const
 
 void Planner::findeventbyinfo(string info) const
 {
-
+	bool find = false;
+	for (auto& item : book)
+	{	
+		for (auto& event:item.second)
+		{
+			if (event == info)
+			{
+				find = true;
+				cout << item.first << endl;
+				break;
+			}
+		}
+	}
+	if (!find)
+	{	
+		cout << "Not found:(" << endl;
+	}
 }
 
 void Planner::showinfo() const
