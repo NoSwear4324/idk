@@ -1,6 +1,9 @@
 ﻿#include <iostream>
+#include "Planner.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Planner yaroslav;
+    yaroslav.addevent(Date()-1,"Park");
+    yaroslav.showinfo();
 }
