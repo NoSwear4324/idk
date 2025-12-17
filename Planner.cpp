@@ -1,4 +1,5 @@
 #include "Planner.h"
+#include <algorithm>
 Planner::Planner()
 {
 	book[Date()].push_back("C++");
@@ -19,7 +20,27 @@ void Planner::delevent(Date d, string info)
 {
 	if (book.find(d) == book.end())
 	{	
-		cout << "Date not found!!" << endl;
+		cout << "Date not found:(" << endl;
+		
+	}
+	else
+	{	
+		auto p = find(book[d].begin(), book[d].end(), info);
+		if (p == book[d].end())
+		{	
+			cout << "Event not found:(" << endl;
+			
+		}
+		else
+		{
+			cout << "delete: " << d << " " << info << endl;
+			book[d].erase(p);
+			if (book[d].size() == 0)
+			{	
+				book.erase(d);
+			}
+			
+		}
 	}
 }
 
